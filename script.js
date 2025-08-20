@@ -1,7 +1,10 @@
 const log = console.log;
 
+// Initialize variables
 let humanScore = 0;
 let computerScore = 0;
+let humanSelection = "";
+let computerSelection = "";
 
 function getComputerChoice() {
   let choiceNum = Math.random();
@@ -76,13 +79,6 @@ function playRound(humanChoice, computerChoice) {
     }
   }
 }
-
-let humanSelection = "";
-let computerSelection = "";
-
-// log(humanSelection);
-// log(computerSelection);
-// playRound(humanSelection, computerSelection);
 
 function playGame() {
   // Round 1
