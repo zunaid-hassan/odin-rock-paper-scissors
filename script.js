@@ -107,7 +107,7 @@ function playGame() {
   playRound(humanSelection, computerSelection);
 
   if (computerScore > humanScore) {
-    log("Sorry, the computer wins with a score of: " + computerScore);
+    log("Sorry! The computer wins with a score of: " + computerScore);
   } else if (computerScore < humanScore) {
     log("Yay! You have won with a score of: " + humanScore);
   } else {
