@@ -22,7 +22,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   let humanChoice = "";
-  humanChoice = prompt("Select Rock, Paper or Scissors", undefined);
+  humanChoice = prompt("Type: Rock, Paper or Scissors", undefined);
   humanChoice = humanChoice.toLowerCase();
   return humanChoice;
 }
