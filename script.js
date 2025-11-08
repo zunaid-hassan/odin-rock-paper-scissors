@@ -81,6 +81,22 @@ function playRound(humanChoice, computerChoice) {
 }
 
 // function playGame() {
+//   for (let i = 1; i <= 5; i++) {
+//     humanSelection = getHumanChoice();
+//     computerSelection = getComputerChoice();
+//     playRound(humanSelection, computerSelection);
+//   }
+
+//   if (computerScore > humanScore) {
+//     log("Sorry! The computer wins with a score of: " + computerScore);
+//   } else if (computerScore < humanScore) {
+//     log("Yay! You have won with a score of: " + humanScore);
+//   } else {
+//     log("Oops! It's a tie!");
+//   }
+// }
+
+// function playGame() {
 //   // Round 1
 //   humanSelection = getHumanChoice();
 //   computerSelection = getComputerChoice();
@@ -111,4 +127,21 @@ function playRound(humanChoice, computerChoice) {
 //   }
 // }
 
-playGame();
+// playGame();
+
+let btnList = document.querySelectorAll("button");
+// let btnRock = document.querySelector("#rock");
+
+// btnRock.addEventListener("click", () => console.log(btnRock));
+
+// btnRock.addEventListener("click", value);
+
+// function value(e) {
+//   console.log(e);
+// }
+
+// console.log(btnList);
+
+btnList.forEach((button) => {
+  button.addEventListener("click", () => console.log(button));
+});
