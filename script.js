@@ -120,6 +120,6 @@ let btnList = document.querySelectorAll("button");
 
 // console.log(btnList);
 
-// btnList.forEach((button) => {
-//   button.addEventListener("click", () => console.log(button));
-// });
+btnList.forEach((button) => {
+  button.addEventListener("click", () => console.log(button));
+});
