@@ -96,28 +96,6 @@ function playRound(humanChoice, computerChoice) {
 //   }
 // }
 
-// function playGame() {
-//   // Round 1
-//   humanSelection = getHumanChoice();
-//   computerSelection = getComputerChoice();
-//   playRound(humanSelection, computerSelection);
-//   // Round 2
-//   humanSelection = getHumanChoice();
-//   computerSelection = getComputerChoice();
-//   playRound(humanSelection, computerSelection);
-//   // Round 3
-//   humanSelection = getHumanChoice();
-//   computerSelection = getComputerChoice();
-//   playRound(humanSelection, computerSelection);
-//   // Round 4
-//   humanSelection = getHumanChoice();
-//   computerSelection = getComputerChoice();
-//   playRound(humanSelection, computerSelection);
-//   // Round 5
-//   humanSelection = getHumanChoice();
-//   computerSelection = getComputerChoice();
-//   playRound(humanSelection, computerSelection);
-
 //   if (computerScore > humanScore) {
 //     log("Sorry! The computer wins with a score of: " + computerScore);
 //   } else if (computerScore < humanScore) {
@@ -142,6 +120,6 @@ let btnList = document.querySelectorAll("button");
 
 // console.log(btnList);
 
-btnList.forEach((button) => {
-  button.addEventListener("click", () => console.log(button));
-});
+// btnList.forEach((button) => {
+//   button.addEventListener("click", () => console.log(button));
+// });
