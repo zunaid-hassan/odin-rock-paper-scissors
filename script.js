@@ -81,26 +81,11 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-  // Round 1
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  // Round 2
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  // Round 3
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  // Round 4
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  // Round 5
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
+  for (let i = 1; i <= 5; i++) {
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+  }
 
   if (computerScore > humanScore) {
     log("Sorry! The computer wins with a score of: " + computerScore);
@@ -110,5 +95,36 @@ function playGame() {
     log("Oops! It's a tie!");
   }
 }
+
+// function playGame() {
+//   // Round 1
+//   humanSelection = getHumanChoice();
+//   computerSelection = getComputerChoice();
+//   playRound(humanSelection, computerSelection);
+//   // Round 2
+//   humanSelection = getHumanChoice();
+//   computerSelection = getComputerChoice();
+//   playRound(humanSelection, computerSelection);
+//   // Round 3
+//   humanSelection = getHumanChoice();
+//   computerSelection = getComputerChoice();
+//   playRound(humanSelection, computerSelection);
+//   // Round 4
+//   humanSelection = getHumanChoice();
+//   computerSelection = getComputerChoice();
+//   playRound(humanSelection, computerSelection);
+//   // Round 5
+//   humanSelection = getHumanChoice();
+//   computerSelection = getComputerChoice();
+//   playRound(humanSelection, computerSelection);
+
+//   if (computerScore > humanScore) {
+//     log("Sorry! The computer wins with a score of: " + computerScore);
+//   } else if (computerScore < humanScore) {
+//     log("Yay! You have won with a score of: " + humanScore);
+//   } else {
+//     log("Oops! It's a tie!");
+//   }
+// }
 
 playGame();
