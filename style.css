@@ -1,4 +1,94 @@
+* {
+  margin: 0;
+  box-sizing: content-box;
+  /* outline: 1px solid blue; */
+}
+
 body {
   background-color: lightblue;
   font-family: "Roboto", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
+h1 {
+  color: lightcyan;
+  background-color: darkcyan;
+  padding: 10px;
+}
+hr {
+  border-style: double;
+  color: darkcyan;
+}
+
+button {
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+  background-color: lightcyan;
+  border-radius: 5px;
+  border-color: darkcyan;
+  /* border-style: solid; */
+}
+
+button:active {
+  background-color: white;
+  transition: 0.2s;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  /* outline: 2px solid red; */
+}
+
+.round-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 50px;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightcyan;
+}
+
+/* .round-container > * {
+  outline: 2px solid red;
+} */
+
+.choice-container {
+  display: flex;
+  gap: 5px;
+}
+
+.human-choice-container,
+.computer-choice-container,
+.result-container {
+  border: 1px solid darkcyan;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: light;
+}
+
+footer {
+  margin-top: auto;
+  background-color: darkcyan;
+  color: lightcyan;
+  font-weight: bold;
+  padding: 10px;
+}
+
+::selection {
+  color: cyan;
+  background: lightseagreen;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* * {
+  outline: 2px solid red;
+} */

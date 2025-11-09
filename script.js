@@ -5,6 +5,7 @@ let humanScore = 0;
 let computerScore = 0;
 let humanSelection = "";
 let computerSelection = "";
+let playerSelection = "";
 
 function getComputerChoice() {
   let choiceNum = Math.random();
@@ -107,7 +108,7 @@ function playRound(humanChoice, computerChoice) {
 
 // playGame();
 
-let btnList = document.querySelectorAll("button");
+// let btnList = document.querySelectorAll("button");
 // let btnRock = document.querySelector("#rock");
 
 // btnRock.addEventListener("click", () => console.log(btnRock));
@@ -120,6 +121,41 @@ let btnList = document.querySelectorAll("button");
 
 // console.log(btnList);
 
-btnList.forEach((button) => {
-  button.addEventListener("click", () => console.log(button));
+// btnList.forEach((button) => {
+//   button.addEventListener("click", (event) => console.log(event));
+// });
+
+let btnContainer = document.querySelector("#button-container");
+
+btnContainer.addEventListener("click", (event) => {
+  let target = event.target;
+
+  switch (target.id) {
+    case "rock":
+      playerSelection = target.id;
+      console.log(`You selected ${playerSelection}!`);
+      return playerSelection;
+    case "paper":
+      playerSelection = target.id;
+      console.log(`You selected ${playerSelection}!`);
+      return playerSelection;
+    case "scissors":
+      playerSelection = target.id;
+      console.log(`You selected ${playerSelection}!`);
+      return playerSelection;
+  }
 });
+
+let btnList = document.querySelectorAll("button");
+
+btnList.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const body = document.querySelector("body");
+    const footer = document.querySelector("footer");
+    let selectionText = document.createElement("p");
+    selectionText.textContent = "You chose: " + event.target.textContent;
+    body.insertBefore(selectionText, footer);
+  });
+});
+
+log(btnList);
