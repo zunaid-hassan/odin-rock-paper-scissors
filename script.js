@@ -21,6 +21,9 @@ playerChoiceText.classList = "player-choice-container";
 const computerChoiceText = document.createElement("div");
 computerChoiceText.classList = "computer-choice-container";
 
+const resultContainer = document.createElement("div");
+resultContainer.classList = "result-container";
+
 const roundNumberText = document.createElement("div");
 roundNumberText.classList = "round-number";
 roundNumberText.textContent = `Round Number: ${roundNumber}`;
@@ -120,25 +123,21 @@ function roundClick(event) {
 
   computerChoiceText.textContent = "Computer chose: \r\n" + computerSelection;
 
-  const resultContainer = document.createElement("div");
-  resultContainer.classList = "result-container";
+  const resultText = document.createElement("div");
+  resultText.classList = "result-text-container";
 
   const resultMessage = playRound(playerSelection, computerSelection);
-  resultContainer.textContent =
+  resultText.textContent =
     resultMessage +
     `\r\nYour score: ${humanScore}\r\nComputer score: ${computerScore}`;
 
-  const roundContainer2 = document.createElement("div");
-  roundContainer2.classList = "round-container2";
-  roundContainer2.appendChild(resultContainer);
-
+  resultContainer.prepend(resultText);
   roundContainer.appendChild(resultContainer);
   body.insertBefore(roundContainer, footer);
 
   roundNumber++;
   roundNumberText.textContent = `Round Number: ${roundNumber}`;
 
-  console.log(roundNumber);
   gameCheck();
 }
 
@@ -148,13 +147,13 @@ function gameCheck() {
     const winner = document.createElement("div");
     winner.classList = "winner-container";
     winner.textContent = "You win!";
-    body.insertBefore(winner, footer);
+    body.insertBefore(winner, roundContainer);
   } else if (computerScore === 5) {
     btnContainer.removeEventListener("click", roundClick);
     btnContainer.removeEventListener("click", roundClick);
     const winner = document.createElement("div");
     winner.classList = "winner-container";
     winner.textContent = "Computer wins!";
-    body.insertBefore(winner, footer);
+    body.insertBefore(winner, roundContainer);
   }
 }
