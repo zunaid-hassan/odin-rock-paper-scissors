@@ -1,9 +1,9 @@
 # odin-rock-paper-scissors
 
-This the Rock Paper Scissors Project from The Odin Project.
+This the Rock Paper Scissors Project from The Odin Project. The goal of this project was to practice DOM manipulation with JavaScript. It builds on a previous console-based Rock, Paper, Scissors game. First to five points win the game.
 
 Lesson link: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
 
-This game needs to be played via the browser console, it has no UI as of this moment.
+Follow-up UI lesson: https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors#assignment
 
 Live preview: https://zunaid-hassan.github.io/odin-rock-paper-scissors/
