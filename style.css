@@ -30,7 +30,14 @@ button {
   background-color: lightcyan;
   border-radius: 5px;
   border-color: darkcyan;
+  margin-bottom: 20px;
+  cursor: pointer;
   /* border-style: solid; */
+}
+
+button:hover {
+  color: darkcyan;
+  transition: 0.2s;
 }
 
 button:active {
@@ -45,19 +52,40 @@ button:active {
   /* outline: 2px solid red; */
 }
 
+.round-number {
+  font-size: larger;
+  font-weight: bolder;
+  margin: 0px 20% 10px 20%;
+  border: 2px solid burlywood;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: bisque;
+}
+
 .round-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  margin: 20px 50px;
+  margin: 0px 20% 10px 20%;
   border: 2px solid darkcyan;
   border-radius: 10px;
-  padding: 5px;
-  background-color: lightcyan;
+  padding: 10px;
+  background-color: lightseagreen;
 }
 
-/* .round-container > * {
+.round-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 0px 20% 10px 20%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: lightskyblue;
+}
+
+/* .round-container * {
   outline: 2px solid red;
 } */
 
@@ -66,13 +94,14 @@ button:active {
   gap: 5px;
 }
 
-.human-choice-container,
+.player-choice-container,
 .computer-choice-container,
 .result-container {
-  border: 1px solid darkcyan;
-  padding: 5px;
+  background-color: lightcyan;
+  border: 2px solid darkcyan;
+  padding: 5px 30px;
   border-radius: 5px;
-  background-color: light;
+  white-space: pre-line;
 }
 
 footer {
@@ -89,6 +118,19 @@ footer {
   font-family: "Times New Roman", Times, serif;
 }
 
+.winner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 0px 20% 10px 20%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid darkred;
+  background-color: tomato;
+  font-weight: bold;
+  font-size: x-large;
+}
 /* * {
   outline: 2px solid red;
 } */
