@@ -1,4 +1,4 @@
-# odin-rock-paper-scissors
+# The Odin Project - Rock, Paper, Scissors
 
 This the Rock Paper Scissors Project from The Odin Project. The goal of this project was to practice DOM manipulation with JavaScript. It builds on a previous console-based Rock, Paper, Scissors game. First to five points win the game.
 
